@@ -1,0 +1,81 @@
+.clock-body{
+    /* background-color: rgb(149, 125, 172); */
+    background-image:radial-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0));
+    width: 65vw;
+    height: 74vh;
+    margin:auto;
+    /* margin-top: 70px; */
+    border-radius: 32px;
+}
+@keyframes glow{
+    from{
+        border: whitesmoke;
+        border-width: 1px ;
+        border-style: solid;
+        /* box-shadow:0 0 0px white, 0 0 20px rgb(237, 246, 247), 0 0 30px rgb(224, 244, 245), 0 0 40px rgb(245, 249, 249), 0 0 50px rgb(151, 236, 232) ; */
+        box-shadow: 0 0 10 px white, 0 0 100px rgba(0, 255, 238, 0.829);
+    }
+    to{
+        border: whitesmoke;
+        border-width: 1px ;
+        border-style: solid;
+        box-shadow:0 0 15px rgb(255, 255, 255), 0 0 25px rgba(125, 246, 250, 0.886), 0 0 35px rgba(16, 228, 247, 0.479), 0 0 45px rgb(124, 247, 241), 0 0 60px rgba(0, 255, 242, 0.361) ;
+    }
+}
+h1{
+    text-align: center;
+    font-size: 10vh;
+    color:#71e4f1;
+    margin: 0 auto 16px auto
+}
+
+.clock-body-2{
+    background-color: rgb(0, 0, 0);
+    height:50vh;
+    width:60vw;
+    margin:auto;
+    border-radius: 32px;
+    position:relative;
+    top:17%;
+    margin-top: 0;
+    color:#71e4f1;
+    font-size: 80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation:glow 1s ease-in-out infinite alternate-reverse;
+    
+}
+
+body{
+    background-color: black;
+}
+
+@media screen and (max-width: 930px) and (min-width:548px){
+    .clock-body-2{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 548px) and (min-width:250px){
+    .clock-body{
+        height:31vh;
+    }
+    .clock-body-2{
+        height: 28vh;
+        font-size: 40px;
+        top:5%;
+    }
+}
+@media screen and (max-width: 250px){
+    .clock-body{
+        height:31vh;
+    }
+    .clock-body-2{
+        height: 28vh;
+        font-size: 20px;
+        top:5%;
+    }
+}
+
